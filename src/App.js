@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import './bootstrap.css';
+import './components/Tweetapp/TweetApp'
+import React,{ Component } from 'react';
+import TweetApp  from './components/Tweetapp/TweetApp';
+import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap";
+import'./styles.css';
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <TweetApp></TweetApp>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,250 @@
+.row {
+    padding-top:50px;  
+    width:100%;
+
+  }
+  .login_form {
+    width:100%;
+    max-width:10px;
+    display:block;
+    margin:0 auto;
+    background:#fd9906;
+    border-bottom:10px solid brown;
+    padding:30px;
+    position:relative;
+  }
+  .login_form:before,.login_form:after {
+    position:absolute;
+    content:'';
+    top:8px;
+    width:150%;
+    height:102%;
+    background:brown;
+    border-radius:0px;
+    z-index:-1;
+  }
+  .login_form:before {    transform:skew(3deg); 
+    left:-10px;
+  }
+  .login_form:after { 
+    transform:skew(-3deg);
+    right:-10px; 
+  }
+  
+  .form_title {
+    margin:5px 0 20px 0;
+    text-align:center;  
+    color:yellow;
+    text-shadow:1px 1px 1px #888;
+  }
+  .form-control,.btn {
+    padding-top:20px; 
+    margin:0 auto;
+    border-radius:0;
+    border:0;
+    transform-origin:right top;
+    box-shadow:0.5px 1.5px 1px rgb(231, 105, 2);
+    max-width: max-content;
+  }
+  .btn {
+    width:30%;
+    background:#fff;
+    cursor:pointer;
+  }
+  @keyframes show {
+    from{
+      opacity:0;
+      border-radius:100px; 
+      transform:translateY(50px);
+    }
+    to{
+      opacity:1;
+      border-radius:0;
+      transform:translateY(0px);
+    }
+  }
+
+  .container{
+    height: 800px;
+   
+    max-width: 60px;
+    position: absolute;
+  }
+  .form-group{
+    padding-top:-25px; 
+    text-align:center;  
+    padding-left: 50px;
+    padding-right: 50px; 
+    margin-top: auto;
+    
+  }
+
+  .forgot-password  {
+    text-align: right;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #000000;
+    margin: 0;
+    float: right;
+  }
+
+  .new-user{
+    text-align: left;
+    float: left;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #000000;
+    margin: 0;  
+   
+  }
+  .logout-group{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:  20%;
+    height:min-content;
+    text-align:center;
+    padding-top:10px; 
+    
+  }
+  .logout-group1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width:  20%;
+    height:min-content;
+    text-align:center;
+    padding-top:10px; 
+    
+  }
+  .btn-btn-default{
+    
+    background-color: #fd9906;
+    border: none;
+    color: black;
+    padding: 14px 28px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow:1.5px 1.5px 1.5px 2.5px rgb(231, 105, 2);
+    width:  60%;
+    height: 30%;
+    margin-top: auto;
+    border-radius:1px solid rgb(231, 105, 2);
+  }
+
+  .btn-btn-primary{
+    background-color: #fd9906;
+    width:  50%;
+    height: 50%;
+    border: brown;
+    border-radius:1px;
+    box-shadow:1.5px 1.5px 1.5px 2.5px rgb(231, 105, 2);
+    border-radius:1px solid rgb(231, 105, 2);
+    bottom: 40%;
+  }
+
+  .postbutton{
+    background-color: #fd9906;
+    box-shadow:0.5px 1.5px 1px rgb(231, 105, 2);
+    border-radius:1px solid rgb(231, 105, 2);
+    border-color: #fd9906;
+  }
+
+  .replybtn{
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    width:  20%;
+    height: 35%;
+    text-align:center;
+    box-shadow:0.5px 1.5px 1px rgb(231, 105, 2);
+    border-radius:1px solid rgb(231, 105, 2);
+    border-color: #fd9906;
+    background-color: #fd9906;
+  }
+
+
+  .likebtn{
+    position: absolute;
+    bottom: 1px;
+    right:  10px;
+    width:  20%;
+    height: 35%;
+    text-align:center;
+    box-shadow:0.5px 1.5px 1px rgb(231, 105, 2);
+    border-radius:1px solid rgb(231, 105, 2);
+    border-color: #fd9906;
+    background-color: #fd9906;
+  }
+  .int{
+    text-align: center;
+  }
+  .tweet{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logout-group3{
+    position: absolute;
+    
+    right: 10px;
+    width:  20%;
+    height: 30%;
+    text-align:center;
+    
+    bottom: 70%;
+    
+  }
+  .logout-group4{
+    position: absolute;
+   
+    left: 10px;
+    width:  20%;
+    height: 30%;
+    text-align:center;
+    padding-top:10px; 
+    bottom: 60%;
+  }
+  
+  .search{
+    float: right;
+    display: flex;
+  flex-direction: "column";
+  align-items: "flex-end" ;
+  width:"20%"
+  }
+  
+  .logout-serach{
+    
+    bottom: 50px;
+    right: 70px;
+    width:  20%;
+    height: 30%;
+    
+    padding-bottom:10px; 
+  }
+
+  .logout-button{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width:  25%;
+    height:min-content;
+    text-align:center;
+    padding-top:10px; 
+    
+  }
+
+  .logout-home{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width:  25%;
+    height:min-content;
+    text-align:center;
+    padding-top:10px; 
+    
+  }
+
+ 

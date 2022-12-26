@@ -1,0 +1,100 @@
+.row {
+    padding-top:50px;  
+    width:60%;
+
+  }
+  .login_form {
+    width:10%;
+    max-width:10px;
+    display:block;
+    margin:0 auto;
+    background:#fd9906;
+    border-bottom:10px solid brown;
+    padding:30px;
+    position:relative;
+  }
+  .login_form:before,.login_form:after {
+    position:absolute;
+    content:'';
+    top:8px;
+    width:50px;
+    height:102%;
+    background:brown;
+    border-radius:0px;
+    z-index:-1;
+  }
+  .login_form:before {    transform:skew(3deg); 
+    left:-10px;
+  }
+  .login_form:after { 
+    transform:skew(-3deg);
+    right:-10px; 
+  }
+  
+  .form_title {
+    margin:5px 0 20px 0;
+    text-align:center;  
+    color:yellow;
+    text-shadow:1px 1px 1px #888;
+  }
+  .form-control,.btn {
+    padding-top:20px; 
+    margin:0 auto;
+    border-radius:0;
+    border:0;
+    transform-origin:right top;
+    box-shadow:0.5px 1.5px 1px rgb(231, 105, 2);
+    max-width: max-content;
+  }
+  .btn {
+    width:30%;
+    background:#fff;
+    cursor:pointer;
+  }
+  @keyframes show {
+    from{
+      opacity:0;
+      border-radius:100px; 
+      transform:translateY(50px);
+    }
+    to{
+      opacity:1;
+      border-radius:0;
+      transform:translateY(0px);
+    }
+  }
+
+  .container{
+    width: 150%;
+    position: absolute;
+    right: -150px;
+    width: 100px;
+    height: 120px;
+  }
+  .form-group{
+    padding-bottom:-25px; 
+    text-align:center;  
+    padding-left: 50px;
+    padding-right: 50px; 
+    margin-top: auto;
+    
+  }
+
+  .forgot-password  {
+    text-align: right;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #000000;
+    margin: 0;
+    float: right;
+  }
+
+  .new-user{
+    text-align: left;
+    float: left;
+    font-size: 15px;
+    padding-top: 10px;
+    color: #000000;
+    margin: 0;  
+   
+  }
